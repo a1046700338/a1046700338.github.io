@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-24T10:43:04.223Z</updated>
+  <updated>2020-12-25T11:13:45.148Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,13 +17,46 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>下载解决方法</title>
+    <link href="http://example.com/2020/12/25/download-fangfa/"/>
+    <id>http://example.com/2020/12/25/download-fangfa/</id>
+    <published>2020-12-25T11:13:01.000Z</published>
+    <updated>2020-12-25T11:13:45.148Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>OBS</title>
+    <link href="http://example.com/2020/12/25/OBS/"/>
+    <id>http://example.com/2020/12/25/OBS/</id>
+    <published>2020-12-25T10:32:22.000Z</published>
+    <updated>2020-12-25T11:14:11.177Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="OBS是一个视频录制以及直播串流的软件"><a href="#OBS是一个视频录制以及直播串流的软件" class="headerlink" title="OBS是一个视频录制以及直播串流的软件"></a>OBS是一个视频录制以及直播串流的软件</h1><h3 id="那么问题来了，OBS是免费的吗？答案是肯定免费的，OBS是一款开源软件，"><a href="#那么问题来了，OBS是免费的吗？答案是肯定免费的，OBS是一款开源软件，" class="headerlink" title="那么问题来了，OBS是免费的吗？答案是肯定免费的，OBS是一款开源软件，"></a>那么问题来了，OBS是免费的吗？答案是肯定免费的，OBS是一款开源软件，</h3><h3 id="开源即开放源代码，开源就是要用户利用源代码在其基础上修改和学习的，"><a href="#开源即开放源代码，开源就是要用户利用源代码在其基础上修改和学习的，" class="headerlink" title="开源即开放源代码，开源就是要用户利用源代码在其基础上修改和学习的，"></a>开源即开放源代码，开源就是要用户利用源代码在其基础上修改和学习的，</h3><h3 id="但开源系统同样也有版权，同样也受到法律保护。"><a href="#但开源系统同样也有版权，同样也受到法律保护。" class="headerlink" title="但开源系统同样也有版权，同样也受到法律保护。"></a>但开源系统同样也有版权，同样也受到法律保护。</h3><h2 id="接下来我将对OBS的安装和使用进行详细的介绍"><a href="#接下来我将对OBS的安装和使用进行详细的介绍" class="headerlink" title="接下来我将对OBS的安装和使用进行详细的介绍"></a>接下来我将对OBS的安装和使用进行详细的介绍</h2><ol><li>进入OBS官网下载软件 <a href="https://obsproject.com/zh-cn%22OBS%E5%AE%98%E7%BD%91%22">链接</a></li><li>来到OBS中国官网，目前OBS支持主流的操作系统，根据你的操作系统对应下载即可</li><li>重点介绍下载方法<br><img src="/images/obs1.jpg" alt="主页面"><br>选择主界面右上角”下载”，在这里面可以根据你的需求和操作系统来进行版本的选择，<br><img src="/images/obs2.jpg"><br>“下载安装程序”—下载下来就是一个exe可执行文件，需要手动安装<br>“使用种子下载”—会下载下来一个torrent种子文件，需要再使用可以解析种子文件的下载器下载（如：迅雷）<br>“下载压缩包”—下载下来一个zip文件，解压就可用非常方便<br>如果你需要下载以前的老版本点击”早期版本”即可<br><img src="/images/obs3.jpg"></li></ol><p><strong>遇到这种下载慢的情况怎么解决？<a href="/download-fangfa">点击链接</a></strong><br>4. 安装<br>安装主要有两种情况，一是下载的exe，二是下载的压缩包<br>前者，下载好后双击exe执行文件，弹窗<br><img src="/"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;OBS是一个视频录制以及直播串流的软件&quot;&gt;&lt;a href=&quot;#OBS是一个视频录制以及直播串流的软件&quot; class=&quot;headerlink&quot; title=&quot;OBS是一个视频录制以及直播串流的软件&quot;&gt;&lt;/a&gt;OBS是一个视频录制以及直播串流的软件&lt;/h1&gt;&lt;h3 i</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>使用Hexo博客驱动，以GitHub作为托管部署网站的详细解决方案(教程)</title>
     <link href="http://example.com/2020/12/24/My-New-Post/"/>
     <id>http://example.com/2020/12/24/My-New-Post/</id>
     <published>2020-12-24T02:50:40.412Z</published>
     <updated>2020-12-24T10:43:04.223Z</updated>
     
-    <content type="html"><![CDATA[<p>摘要</p><a id="more"></a><p>#使用Hexo博客驱动，以GitHub作为托管部署网站的详细解决方案(教程)<br>##需要准备：git，node.js，以及GitHub账号<br>##git官网下载安装</p><ol><li>由于git官网下载实在是太慢了，我给出天翼云盘下载<a href="https://cloud.189.cn/t/zumimuVFNNra%E8%AE%BF%E9%97%AE%E7%A0%81%EF%BC%9Adwv3">链接</a>，注意git版本不是最新版（版本无所谓），如果你需要git最新版本或其它版本下载，<a href="https://git-scm.com/">官方下载地址</a>。</li><li>第二步，下载好之后<img src="/images/Snipaste_2020-12-24_17-13-12.jpg" alt="双击exe执行文件">，计算机会弹出”你要允许你的设备对此更改吗”，选择”是”即可，接下来进入<img src="/images/Snipaste_2020-12-24_17-13-42.jpg" alt="git安装界面">，选择”next”下一步，<img src="/images/Snipaste_2020-12-24_17-14-02.jpg" alt="选择安装路径">你可以选择它默认路径也可以自己选择安装目录，之后就无脑点击”下一步”就可以了<img src="/images/Snipaste_2020-12-24_17-14-18.jpg"><img src="/images/Snipaste_2020-12-24_17-14-27.jpg">继续下一步<img src="/images/Snipaste_2020-12-24_17-14-39.jpg" alt="到最后点击install安装">最后”next”，git正式安装完毕。<br>##node.js官网下载安装<br>node.js安装方法和git大体相同我就不做过多说明了，天翼云盘下载<a href="%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps://cloud.189.cn/t/zmy6VjfmEnm2%E8%AE%BF%E9%97%AE%E7%A0%81%EF%BC%9Asl5a">链接</a>，以及<a href="http://nodejs.cn/download/">官方下载地址</a>。<br>##GitHub官网注册账号（如果已有账号直接登录，我对注册做一个简单教程）<br>网址输入<a href="https://github.com/">https://github.com/</a>，点击sign up，账号创建好了之后，登录账号，头像旁点击”加号”形状的按钮<img src="/images/Snipaste_2020-12-24_17-15-53.jpg">，<br>弹出下拉菜单选择”new repository”<img src="/images/Snipaste_2020-12-24_17-16-05.jpg" alt="创建存储库">，存储库名称为”你的GitHub用户名”+github.io，<img src="/images/Snipaste_2020-12-24_17-17-46.jpg"><br>示列：我的GitHub用户名是”a1046700338”,即”a1046700338.github.io”，最后点击”Create repository”，你的存储库就创建好了，选择”your repository”可以查看你的库<img src="/images/Snipaste_2020-12-24_17-18-00.jpg">。<br>##通过git连接GitHub</li><li>在电脑桌面，鼠标右键选择”git bash here”，进入了vim命令界面<img src="/images/Snipaste_2020-12-24_17-18-22.jpg">，</li><li>设置用户名和邮箱<br><code>git config --global user.name "xxx" </code>（引号内你的用户名）<br><code>git config --global user.email "<a href="mailto:&#x78;&#x78;&#120;&#x40;&#120;&#120;&#x78;&#x2e;&#x63;&#111;&#109;">&#x78;&#x78;&#120;&#x40;&#120;&#120;&#x78;&#x2e;&#x63;&#111;&#109;</a>" </code>    （引号内你的账号邮箱）</li><li>创建SSH密匙<br><code> ssh-keygen -t rsa -C "<a href="mailto:&#120;&#x78;&#x78;&#x40;&#120;&#120;&#x78;&#x2e;&#x63;&#x6f;&#109;">&#120;&#x78;&#x78;&#x40;&#120;&#120;&#x78;&#x2e;&#x63;&#x6f;&#109;</a>" </code>    （引号内你的账号邮箱）然后一路回车，ssh文件默认创建在”C:\Users\用户.ssh”文件路径下，把”隐藏的项目”勾选打开就可以看到隐藏的文件了<img src="/images/Snipaste_2020-12-24_17-18-49.jpg">，</li><li>登陆 GitHub 添加ssh密钥<br>进入 Settings 页面，选择左边栏的 SSH and GPG keys<img src="/images/Snipaste_2020-12-24_17-19-09.jpg">，点击 New SSH key<img src="/images/Snipaste_2020-12-24_17-19-16.jpg">，粘贴复制的 id_rsa.pub 内容到 Key 中<img src="/images/Snipaste_2020-12-24_17-19-30.jpg">，点击 Add SSH key 完成添加。</li><li>验证连接<br>打开”git bash here”，输入<code> ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#99;&#111;&#x6d;</a> </code>，出现 “Are you sure……”，输入 yes 回车确认。显示 “Hi xxx! You’ve successfully……” 即连接成功。<br>##安装本地Hexo博客</li><li>新建一个文件夹用来存放 Hexo 的程序文件，如 Hexo-Blog。打开该文件夹，右键 -&gt; Git Bash Here。<img src="/images/Snipaste_2020-12-24_17-19-43.jpg"></li><li>使用 npm 一键安装 Hexo 博客程序（阿里源下载）<br><code> npm install -g hexo-cli --registry <a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a> </code><br>安装时间有点久（真的很慢！），界面也没任何反应，耐心等待。</li><li>一键部署Hexo<br><code> hexo deploy </code>    输入</li><li>安装hexo-deployer-git工具<br><code> npm install hexo-deployer-git --save </code></li><li>修改hexo文件里的”_config.yml”文件末尾的 Deployment 部分，修改成如下：<code> deploy:   type: git   repo: https://github.com/hexojs/hexojs.github.io   branch: gh-pages</code>repo: https://github.com/你的用户名/你的用户名.github.iobranch: gh-pages，默认分支注意branch里填写和你GitHub里默认分支一样的值。注意冒号后都有一个空格</li><li>之后运行<code>hexo d</code>将网站上传部署到 Gitee Pages。<br>这时访问我们的 GitHub（gitee）域名<br>地址栏输入https://用户名.github.io 就可以看到 Hexo 网站了。</li><li>进入博客所在目录，右键打开 Git Bash Here，创建博文：<br><code> hexo new "My New Post" </code></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>摘要</p><a id="more"></a><p>#使用Hexo博客驱动，以GitHub作为托管部署网站的详细解决方案(教程)<br>##需要准备：git，node.js，以及GitHub账号<br>##git官网下载安装</p><ol><li>由于git官网下载实在是太慢了，我给出天翼云盘下载<a href="https://cloud.189.cn/t/zumimuVFNNra%E8%AE%BF%E9%97%AE%E7%A0%81%EF%BC%9Adwv3">链接</a>，注意git版本不是最新版（版本无所谓），如果你需要git最新版本或其它版本下载，<a href="https://git-scm.com/">官方下载地址</a>。</li><li>第二步，下载好之后<img src="/images/Snipaste_2020-12-24_17-13-12.jpg" alt="双击exe执行文件">，计算机会弹出”你要允许你的设备对此更改吗”，选择”是”即可，接下来进入<img src="/images/Snipaste_2020-12-24_17-13-42.jpg" alt="git安装界面">，选择”next”下一步，<img src="/images/Snipaste_2020-12-24_17-14-02.jpg" alt="选择安装路径">你可以选择它默认路径也可以自己选择安装目录，之后就无脑点击”下一步”就可以了<img src="/images/Snipaste_2020-12-24_17-14-18.jpg"><img src="/images/Snipaste_2020-12-24_17-14-27.jpg">继续下一步<img src="/images/Snipaste_2020-12-24_17-14-39.jpg" alt="到最后点击install安装">最后”next”，git正式安装完毕。<br>##node.js官网下载安装<br>node.js安装方法和git大体相同我就不做过多说明了，天翼云盘下载<a href="%E9%93%BE%E6%8E%A5%EF%BC%9Ahttps://cloud.189.cn/t/zmy6VjfmEnm2%E8%AE%BF%E9%97%AE%E7%A0%81%EF%BC%9Asl5a">链接</a>，以及<a href="http://nodejs.cn/download/">官方下载地址</a>。<br>##GitHub官网注册账号（如果已有账号直接登录，我对注册做一个简单教程）<br>网址输入<a href="https://github.com/">https://github.com/</a>，点击sign up，账号创建好了之后，登录账号，头像旁点击”加号”形状的按钮<img src="/images/Snipaste_2020-12-24_17-15-53.jpg">，<br>弹出下拉菜单选择”new repository”<img src="/images/Snipaste_2020-12-24_17-16-05.jpg" alt="创建存储库">，存储库名称为”你的GitHub用户名”+github.io，<img src="/images/Snipaste_2020-12-24_17-17-46.jpg"><br>示列：我的GitHub用户名是”a1046700338”,即”a1046700338.github.io”，最后点击”Create repository”，你的存储库就创建好了，选择”your repository”可以查看你的库<img src="/images/Snipaste_2020-12-24_17-18-00.jpg">。<br>##通过git连接GitHub</li><li>在电脑桌面，鼠标右键选择”git bash here”，进入了vim命令界面<img src="/images/Snipaste_2020-12-24_17-18-22.jpg">，</li><li>设置用户名和邮箱<br><code>git config --global user.name "xxx" </code>（引号内你的用户名）<br><code>git config --global user.email "<a href="mailto:&#120;&#x78;&#x78;&#x40;&#120;&#120;&#x78;&#x2e;&#x63;&#x6f;&#109;">&#120;&#x78;&#x78;&#x40;&#120;&#120;&#x78;&#x2e;&#x63;&#x6f;&#109;</a>" </code>    （引号内你的账号邮箱）</li><li>创建SSH密匙<br><code> ssh-keygen -t rsa -C "<a href="mailto:&#x78;&#120;&#x78;&#64;&#x78;&#120;&#x78;&#46;&#x63;&#111;&#x6d;">&#x78;&#120;&#x78;&#64;&#x78;&#120;&#x78;&#46;&#x63;&#111;&#x6d;</a>" </code>    （引号内你的账号邮箱）然后一路回车，ssh文件默认创建在”C:\Users\用户.ssh”文件路径下，把”隐藏的项目”勾选打开就可以看到隐藏的文件了<img src="/images/Snipaste_2020-12-24_17-18-49.jpg">，</li><li>登陆 GitHub 添加ssh密钥<br>进入 Settings 页面，选择左边栏的 SSH and GPG keys<img src="/images/Snipaste_2020-12-24_17-19-09.jpg">，点击 New SSH key<img src="/images/Snipaste_2020-12-24_17-19-16.jpg">，粘贴复制的 id_rsa.pub 内容到 Key 中<img src="/images/Snipaste_2020-12-24_17-19-30.jpg">，点击 Add SSH key 完成添加。</li><li>验证连接<br>打开”git bash here”，输入<code> ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#111;&#109;</a> </code>，出现 “Are you sure……”，输入 yes 回车确认。显示 “Hi xxx! You’ve successfully……” 即连接成功。<br>##安装本地Hexo博客</li><li>新建一个文件夹用来存放 Hexo 的程序文件，如 Hexo-Blog。打开该文件夹，右键 -&gt; Git Bash Here。<img src="/images/Snipaste_2020-12-24_17-19-43.jpg"></li><li>使用 npm 一键安装 Hexo 博客程序（阿里源下载）<br><code> npm install -g hexo-cli --registry <a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a> </code><br>安装时间有点久（真的很慢！），界面也没任何反应，耐心等待。</li><li>一键部署Hexo<br><code> hexo deploy </code>    输入</li><li>安装hexo-deployer-git工具<br><code> npm install hexo-deployer-git --save </code></li><li>修改hexo文件里的”_config.yml”文件末尾的 Deployment 部分，修改成如下：<code> deploy:   type: git   repo: https://github.com/hexojs/hexojs.github.io   branch: gh-pages</code>repo: https://github.com/你的用户名/你的用户名.github.iobranch: gh-pages，默认分支注意branch里填写和你GitHub里默认分支一样的值。注意冒号后都有一个空格</li><li>之后运行<code>hexo d</code>将网站上传部署到 Gitee Pages。<br>这时访问我们的 GitHub（gitee）域名<br>地址栏输入https://用户名.github.io 就可以看到 Hexo 网站了。</li><li>进入博客所在目录，右键打开 Git Bash Here，创建博文：<br><code> hexo new "My New Post" </code></li></ol>]]></content>
     
     
     <summary type="html">&lt;p&gt;摘要&lt;/p&gt;</summary>
