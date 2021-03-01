@@ -17,7 +17,7 @@
   <meta name="description" content="Search it">
   <meta name="author" content="Sakurafeiyu">
   <meta name="keywords" content="">
-  <title>测试 - Search it</title>
+  <title>jeecg - Search it</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -179,7 +179,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="测试">
+            <span class="h2" id="subtitle" title="jeecg">
               
             </span>
 
@@ -206,7 +206,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      7 字
+      499 字
     </span>
   
 
@@ -216,7 +216,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      5
        分钟
     </span>
   
@@ -246,18 +246,23 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">测试</h1>
+            <h1 style="display: none">jeecg</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年1月8日 凌晨
+                  本文最后更新于：2021年2月27日 晚上
                 
               </p>
             
             <div class="markdown-body">
-              <p>这是一个测试</p>
+              <p>jeecg开发平台二次开发研究以及笔记</p>
 <a id="more"></a>
-<h1 id="Hello"><a href="#Hello" class="headerlink" title="Hello"></a>Hello</h1>
+<h1 id="关于jeecg"><a href="#关于jeecg" class="headerlink" title="关于jeecg"></a>关于jeecg</h1><p><a target="_blank" rel="noopener" href="http://www.jeecg.com/">jeecg官方网站</a><br>jeecg是一款基于代码生成器“低代码”开发平台的一个开源项目，帮助解决Java项目70%的重复工作，让开发更多关注业务逻辑。既能快速提高开发效率，帮助公司节省成本，同时又不失灵活性！<br>拥有众多的开发插件，有在线编辑，移动开发，流程设计，大屏报表，工作流，OA办公，微信管家等众多功能。<br>采用的最新主流前后分离式框架（Springboot+Mybatis+Antd），代码生成器依赖性低，扩展性强，可灵活实现二次开发。</p>
+<h1 id="使用jeecg"><a href="#使用jeecg" class="headerlink" title="使用jeecg"></a>使用jeecg</h1><h2 id="jeecg开发所需要使用到的工具"><a href="#jeecg开发所需要使用到的工具" class="headerlink" title="jeecg开发所需要使用到的工具"></a>jeecg开发所需要使用到的工具</h2><p>详情查看<a target="_blank" rel="noopener" href="http://doc.jeecg.com/2043872">jeecg官方文档</a>，所需我都以打包好附上链接：链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1OgofyJOnBVMGw3qBF9JTLQ">https://pan.baidu.com/s/1OgofyJOnBVMGw3qBF9JTLQ</a> 提取码: 6f26（百度网盘链接）；<a target="_blank" rel="noopener" href="https://cloud.189.cn/t/euEnAjjYj2U3">https://cloud.189.cn/t/euEnAjjYj2U3</a> 访问码:9i12  （天翼云盘链接）。</p>
+<h2 id="前端环境安装"><a href="#前端环境安装" class="headerlink" title="前端环境安装"></a>前端环境安装</h2><p>Node.js安装及环境配置（Windows）<br>参考<a target="_blank" rel="noopener" href="https://my.oschina.net/jeecg/blog/4277939">https://my.oschina.net/jeecg/blog/4277939</a><br>说明：这里的环境配置主要配置的是npm安装的全局模块所在的路径，以及缓存cache的路径，之所以要配置，是因为以后在执行类似：npm install express [-g] （后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【F:\workspace\node.js】下创建两个文件夹【node_global】及【node_cache】<br>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs routeros">npm<span class="hljs-built_in"> config </span><span class="hljs-builtin-name">set</span><span class="hljs-built_in"> prefix </span><span class="hljs-string">&quot;F:\workspace\node.js\node_global&quot;</span><br>npm<span class="hljs-built_in"> config </span><span class="hljs-builtin-name">set</span> cache <span class="hljs-string">&quot;F:\workspace\node.js\node_cache&quot;</span><br></code></pre></td></tr></table></figure>
+<p>注意：引号内是指你的nodejs安装路径<br>Windows下Yarn安装与使用 参考<a target="_blank" rel="noopener" href="https://my.oschina.net/jeecg/blog/4278012">https://my.oschina.net/jeecg/blog/4278012</a></p>
+
             </div>
             <hr>
             <div>
@@ -266,7 +271,7 @@
                 
               </div>
               
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+                <p class="note note-warning">请注意文章时效性，本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
               
               
                 <div class="post-prevnext">
