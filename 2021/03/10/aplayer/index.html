@@ -62,7 +62,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"sakurafeiyu.top","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":6},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":"67fff6608d4ee2f54ea77a7853a5b92f","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    var CONFIG = {"hostname":"sakurafeiyu.top","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":6},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":"67fff6608d4ee2f54ea77a7853a5b92f","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"appid":null,"appkey":null}}};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -221,7 +221,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      486 字
+      496 字
     </span>
   
 
@@ -237,6 +237,14 @@
   
 
   
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
   
 </div>
 
@@ -265,7 +273,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年3月11日 下午
+                  本文最后更新于：2021年3月12日 早上
                 
               </p>
             
@@ -276,7 +284,7 @@
 <figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs clojure">&#123;% meting <span class="hljs-string">&quot;4857802824&quot;</span> <span class="hljs-string">&quot;netease&quot;</span> <span class="hljs-string">&quot;playlist&quot;</span> <span class="hljs-string">&quot;autoplay&quot;</span> <span class="hljs-string">&quot;mutex:false&quot;</span> <span class="hljs-string">&quot;listmaxheight:340px&quot;</span> <span class="hljs-string">&quot;preload:none&quot;</span> <span class="hljs-string">&quot;theme:#ad7a86&quot;</span>%&#125;<br></code></pre></td></tr></table></figure>
 <p>其会被渲染为html</p>
 <ol>
-<li>安装音乐插件<br>在git里输入这行代码<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> <span class="hljs-comment">--save hexo-tag-aplayer</span><br></code></pre></td></tr></table></figure>
+<li>安装音乐插件<br>在你的hexo博客目录右键git bash here里输入这行代码<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> <span class="hljs-comment">--save hexo-tag-aplayer</span><br></code></pre></td></tr></table></figure>
 然后在网站的根目录下的配置文件_config.yml中填上以下代码：<br>注意冒号后都有空格<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs less"><span class="hljs-attribute">aplayer</span>:<br>  #<span class="hljs-attribute">script_dir</span>: some/place                        # Public 目录下脚本目录路径，默认: <span class="hljs-string">&#x27;assets/js&#x27;</span><br>  #<span class="hljs-attribute">style_dir</span>: some/place                         # Public 目录下样式目录路径，默认: <span class="hljs-string">&#x27;assets/css&#x27;</span><br>  #<span class="hljs-attribute">cdn</span>: <span class="hljs-attribute">http</span>:<span class="hljs-comment">//xxx/aplayer.min.js                # 引用 APlayer.js 外部 CDN 地址 (默认不开启)</span><br>  #<span class="hljs-attribute">style_cdn</span>: <span class="hljs-attribute">http</span>:<span class="hljs-comment">//xxx/aplayer.min.css         # 引用 APlayer.css 外部 CDN 地址 (默认不开启)</span><br>  <span class="hljs-attribute">meting</span>: true                                   # MetingJS 支持<br>  #<span class="hljs-attribute">meting_api</span>: <span class="hljs-attribute">http</span>:<span class="hljs-comment">//xxx/api.php                # 自定义 Meting API 地址</span><br>  #<span class="hljs-attribute">meting_cdn</span>: <span class="hljs-attribute">http</span>:<span class="hljs-comment">//xxx/Meing.min.js           # 引用 Meting.js 外部 CDN 地址 (默认不开启)</span><br>  <span class="hljs-attribute">asset_inject</span>: true                             # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启<br>  #<span class="hljs-attribute">externalLink</span>: <span class="hljs-attribute">http</span>:<span class="hljs-comment">//xxx/aplayer.min.js       # 老版本参数，功能与参数 cdn 相同</span><br></code></pre></td></tr></table></figure></li>
 <li>建立音乐页面<br>使用命令创建音乐界面，比如命名为music。<br><code>hexo new page music</code><br>打开网站根目录source\music\index.md根据hexo-tag-aplayer文档书写即可。</li>
 <li>在主题配置文件_config.yml中menu<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">menu</span>:<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;home&quot;</span>, link: <span class="hljs-string">&quot;/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-home-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;archive&quot;</span>, link: <span class="hljs-string">&quot;/archives/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-archive-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;category&quot;</span>, link: <span class="hljs-string">&quot;/categories/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-category-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;tag&quot;</span>, link: <span class="hljs-string">&quot;/tags/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-tags-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;about&quot;</span>, link: <span class="hljs-string">&quot;/about/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-user-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;music&quot;</span>, link: <span class="hljs-string">&quot;/music/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-yinle&quot;</span> &#125;<br><br></code></pre></td></tr></table></figure>
