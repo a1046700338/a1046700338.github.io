@@ -57,6 +57,7 @@
 
   
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_ijqayz9ro8k.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2291249_4764ndq3fp.css">
 
 
 
@@ -143,6 +144,18 @@
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://sakurafeiyu.top/WebStack/cn/index.html/">
+                <i class="iconfont icon-daohang"></i>
+                navigation
               </a>
             </li>
           
@@ -273,7 +286,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年3月12日 上午
+                  本文最后更新于：2021年4月5日 晚上
                 
               </p>
             
@@ -287,8 +300,8 @@
 <h2 id="3-建立音乐页面"><a href="#3-建立音乐页面" class="headerlink" title="3. 建立音乐页面"></a>3. 建立音乐页面</h2><p>使用命令创建音乐界面，比如命名为music。<br><code>hexo new page music</code><br>打开网站根目录source\music\index.md根据hexo-tag-aplayer文档书写即可。<br>打开index.md在markdown中要这样写</p>
 <figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs clojure">&#123;% meting <span class="hljs-string">&quot;4857802824&quot;</span> <span class="hljs-string">&quot;netease&quot;</span> <span class="hljs-string">&quot;playlist&quot;</span> <span class="hljs-string">&quot;autoplay&quot;</span> <span class="hljs-string">&quot;mutex:false&quot;</span> <span class="hljs-string">&quot;listmaxheight:340px&quot;</span> <span class="hljs-string">&quot;preload:none&quot;</span> <span class="hljs-string">&quot;theme:#ad7a86&quot;</span>%&#125;<br></code></pre></td></tr></table></figure>
 <p>其会被渲染为html</p>
-<h2 id="4-在主题配置文件-config-yml中menu"><a href="#4-在主题配置文件-config-yml中menu" class="headerlink" title="4. 在主题配置文件_config.yml中menu"></a>4. 在主题配置文件_config.yml中menu</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">menu</span>:<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;home&quot;</span>, link: <span class="hljs-string">&quot;/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-home-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;archive&quot;</span>, link: <span class="hljs-string">&quot;/archives/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-archive-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;category&quot;</span>, link: <span class="hljs-string">&quot;/categories/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-category-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;tag&quot;</span>, link: <span class="hljs-string">&quot;/tags/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-tags-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;about&quot;</span>, link: <span class="hljs-string">&quot;/about/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-user-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;music&quot;</span>, link: <span class="hljs-string">&quot;/music/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-yinle&quot;</span> &#125;<br><br></code></pre></td></tr></table></figure>
-<p>添加上这一行<br><code>    - &#123; key: "music", link: "/music/", icon: "iconfont icon-yinle" &#125;</code></p>
+<h2 id="4-在主题配置文件-config-yml中menu"><a href="#4-在主题配置文件-config-yml中menu" class="headerlink" title="4. 在主题配置文件_config.yml中menu"></a>4. 在主题配置文件_config.yml中menu</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">menu</span>:<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;home&quot;</span>, link: <span class="hljs-string">&quot;/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-home-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;archive&quot;</span>, link: <span class="hljs-string">&quot;/archives/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-archive-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;category&quot;</span>, link: <span class="hljs-string">&quot;/categories/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-category-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;tag&quot;</span>, link: <span class="hljs-string">&quot;/tags/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-tags-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;about&quot;</span>, link: <span class="hljs-string">&quot;/about/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-user-fill&quot;</span> &#125;<br>  <span class="hljs-selector-tag">-</span> &#123; <span class="hljs-attribute">key</span>: <span class="hljs-string">&quot;music&quot;</span>, link: <span class="hljs-string">&quot;/music/&quot;</span>, icon: <span class="hljs-string">&quot;iconfont icon-music&quot;</span> &#125;<br><br></code></pre></td></tr></table></figure>
+<p>添加上这一行<br><code>    - &#123; key: "music", link: "/music/", icon: "iconfont icon-music" &#125;</code></p>
 
             </div>
             <hr>
