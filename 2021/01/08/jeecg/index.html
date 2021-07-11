@@ -1,0 +1,628 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/search.png">
+  <link rel="icon" href="/images/%E5%B0%8F%E9%B1%BC.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="jeecg开发平台二次开发研究以及笔记">
+  <meta name="author" content="Sakurafeiyu">
+  <meta name="keywords" content="">
+  
+  <title>jeecg | Sakurafeiyu</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_ijqayz9ro8k.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2291249_p6m1sis757.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"a1046700338.github.io","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":6},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":"3c2993e71989f80eab298eb39818110d","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"appid":null,"appkey":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Sakurafeiyu" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Sakurafeiyu</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://a1046700338.github.io/WebStack/">
+                <i class="iconfont icon-daohang"></i>
+                navigation
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/music/">
+                <i class="iconfont icon-music"></i>
+                music
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/images/v2.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="jeecg">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      Sakurafeiyu
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-01-08 00:27" pubdate>
+        2021年1月8日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      766 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      9
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">jeecg</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年3月4日 中午
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>jeecg开发平台二次开发研究以及笔记</p>
+<span id="more"></span>
+<h1 id="关于jeecg"><a href="#关于jeecg" class="headerlink" title="关于jeecg"></a>关于jeecg</h1><p><a target="_blank" rel="noopener" href="http://www.jeecg.com/">jeecg官方网站</a> <span>|</span> <a target="_blank" rel="noopener" href="https://github.com/zhangdaiscott/jeecg-boot">jeecg源码下载</a><br>jeecg是一款基于代码生成器“低代码”开发平台的一个开源项目，帮助解决Java项目70%的重复工作，让开发更多关注业务逻辑。既能快速提高开发效率，帮助公司节省成本，同时又不失灵活性！<br>拥有众多的开发插件，有在线编辑，移动开发，流程设计，大屏报表，工作流，OA办公，微信管家等众多功能。<br>采用的最新主流前后分离式框架（Springboot+Mybatis+Antd），代码生成器依赖性低，扩展性强，可灵活实现二次开发。</p>
+<h1 id="使用jeecg"><a href="#使用jeecg" class="headerlink" title="使用jeecg"></a>使用jeecg</h1><h2 id="jeecg开发所需要使用到的工具"><a href="#jeecg开发所需要使用到的工具" class="headerlink" title="jeecg开发所需要使用到的工具"></a>jeecg开发所需要使用到的工具</h2><p>详情查看<a target="_blank" rel="noopener" href="http://doc.jeecg.com/2043872">jeecg官方文档</a><br><strong>开发工具包</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1RBcJ2Nc3ZGR_4lCRoCiv3g">https://pan.baidu.com/s/1RBcJ2Nc3ZGR_4lCRoCiv3g</a> 提取码: jxrw （百度网盘链接）；<a target="_blank" rel="noopener" href="https://cloud.189.cn/t/euEnAjjYj2U3">https://cloud.189.cn/t/euEnAjjYj2U3</a> 访问码:9i12  （天翼云盘链接）。</p>
+<h2 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h2><h3 id="jdk"><a href="#jdk" class="headerlink" title="jdk"></a>jdk</h3><h3 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h3><h3 id="navicat"><a href="#navicat" class="headerlink" title="navicat"></a>navicat</h3><h3 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h3><p>Node.js安装及环境配置（Windows）<br>参考<a target="_blank" rel="noopener" href="https://my.oschina.net/jeecg/blog/4277939">https://my.oschina.net/jeecg/blog/4277939</a><br>说明：这里的环境配置主要配置的是npm安装的全局模块所在的路径，以及缓存cache的路径，之所以要配置，是因为以后在执行类似：npm install express [-g] （后面的可选参数-g，g代表global全局安装的意思）的安装语句时，会将安装的模块安装到【C:\Users\用户名\AppData\Roaming\npm】路径中，占C盘空间。<br>例如：我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【F:\workspace\node.js】下创建两个文件夹【node_global】及【node_cache】<br>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs routeros">npm<span class="hljs-built_in"> config </span><span class="hljs-builtin-name">set</span><span class="hljs-built_in"> prefix </span><span class="hljs-string">&quot;F:\workspace\node.js\node_global&quot;</span><br>npm<span class="hljs-built_in"> config </span><span class="hljs-builtin-name">set</span> cache <span class="hljs-string">&quot;F:\workspace\node.js\node_cache&quot;</span><br></code></pre></td></tr></table></figure>
+<p>注意：引号内是指你的nodejs安装路径<br>Windows下Yarn安装与使用 参考<a target="_blank" rel="noopener" href="https://my.oschina.net/jeecg/blog/4278012">https://my.oschina.net/jeecg/blog/4278012</a></p>
+<h3 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h3><p>redis安装包<a href=""></a>，上面的开发工具包里也有，自由选择。<br>参考<a target="_blank" rel="noopener" href="https://www.runoob.com/redis/redis-install.html">https://www.runoob.com/redis/redis-install.html</a><br>下载好redis后解压，<br>打开cmd命令窗口，<code>windows</code>键加<code>R</code>键，<br>使用cd命令进入到你的redis解压目录：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">cd</span>\<br><span class="hljs-attribute">d</span>:<br><span class="hljs-attribute">cd</span> D:\redis<span class="hljs-number">64</span>-<span class="hljs-number">3</span>.<span class="hljs-number">0</span>.<span class="hljs-number">501</span><br><span class="hljs-attribute">redis</span>-server.exe redis.windows.conf<br></code></pre></td></tr></table></figure>
+<p><img src="/images/jeecg_01.jpg" srcset="/img/loading.gif" lazyload><br><img src="/images/jeecg_02.jpg" srcset="/img/loading.gif" lazyload><br>然后再启动一个 cmd 窗口，原来的不要关闭，不然就无法访问服务端了。<br>切换到 redis 目录下</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">cd</span>\<br><span class="hljs-attribute">d</span>:<br><span class="hljs-attribute">cd</span> D:\redis<span class="hljs-number">64</span>-<span class="hljs-number">3</span>.<span class="hljs-number">0</span>.<span class="hljs-number">501</span><br></code></pre></td></tr></table></figure>
+<p>运行：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">redis</span>-cli.exe -h <span class="hljs-number">127.0.0.1</span> -p <span class="hljs-number">6379</span><br></code></pre></td></tr></table></figure>
+<p>设置键值对：</p>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-keyword">set</span> myKey <span class="hljs-comment">abc</span><br></code></pre></td></tr></table></figure>
+<p>取出键值对：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-builtin-name">get</span> myKey<br></code></pre></td></tr></table></figure>
+<p>127.0.0.1 是本机 IP ，6379 是 redis 服务端口。现在输入 PING 命令<br>redis 127.0.0.1:6379&gt;<code>ping</code><br>PONG<br>以上说明我们已经成功安装了redis。</p>
+<h3 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h3><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>后端开发建议采用IDEA，方便多Maven模块开发，热部署请集成JRebel。<br>参考<a target="_blank" rel="noopener" href="http://doc.jeecg.com/2043872">http://doc.jeecg.com/2043872</a><br>jdk8安装<a href=""></a><br>Maven安装<a href=""></a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42831477/article/details/82229436">IDEA热部署JRebel安装</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装好jdk，mysql，navicat，nodejs，redis，maven以及集成开发环境（eclipse或idea或webstrom）后，</p>
+<h2 id="导入Maven项目"><a href="#导入Maven项目" class="headerlink" title="导入Maven项目"></a>导入Maven项目</h2><p><img src="/" srcset="/img/loading.gif" lazyload><br><img src="/" srcset="/img/loading.gif" lazyload><br>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43151608/article/details/100121724">https://blog.csdn.net/weixin_43151608/article/details/100121724</a></p>
+<h2 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a>启动项目</h2>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%88%86%E4%BA%AB/">分享</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%BD%AC%E8%BD%BD/">转载</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%B0%8F%E7%99%BD/">小白</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本文作者: sakurafeiyu<br /> 博客链接: https://a1046700338.github.io<br /> 版权声明: 本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0</a> 许可协议。转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/03/10/aplayer/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">aplayer</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/12/25/download-fangfa/">
+                        <span class="hidden-mobile">下载解决方法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"CkA59kaHWYymv3LzYGFO2yT9-gzGzoHsz","appKey":"gP0FoW0FBogrBv1NT1WSrzJt","placeholder":"码字不易，有错误请指出，谢谢","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":false,"serverURLs":"https://cka59kah.lc-cn-n1-shared.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false,"requiredFields":[],"appid":"CkA59kaHWYymv3LzYGFO2yT9-gzGzoHsz","appkey":"gP0FoW0FBogrBv1NT1WSrzJt"},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://a1046700338.github.io" style="color:#1781b5">⭐Sakurafeiyu⭐</a> <br /> <span>Copyright © 2020-2021</span> <br /> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo Power</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid Theme</span></a>
+
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+  <!-- 备案信息 -->
+  <div class="beian">
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        蜀ICP备2020025688号-1
+      </a>
+    </span>
+    
+      
+        <span>
+          <a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12345678"
+            rel="nofollow noopener"
+            class="beian-police"
+            target="_blank"
+          >
+            
+              <span style="visibility: hidden; width: 0">|</span>
+              <img src="/images/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" srcset="/img/loading.gif" lazyload alt="police-icon"/>
+            
+            <span>川公网安备xxxxx号（由于备案号忘了正在找回中）</span>
+          </a>
+        </span>
+      
+    
+  </div>
+
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3c2993e71989f80eab298eb39818110d";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+<script src="/js/diy/timeDate.js"></script>
+<script src="/js/love.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiantiao.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/love.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
