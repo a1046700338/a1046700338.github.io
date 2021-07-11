@@ -232,7 +232,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1 字
+      722 字
     </span>
   
 
@@ -242,7 +242,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      9
        分钟
     </span>
   
@@ -284,12 +284,59 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年3月9日 下午
+                  本文最后更新于：2021年7月11日 下午
                 
               </p>
             
             <div class="markdown-body">
-              <h1 id="IDM"><a href="#IDM" class="headerlink" title="IDM"></a>IDM</h1><h1 id="FDM"><a href="#FDM" class="headerlink" title="FDM"></a>FDM</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1>
+              <h1 id="qBittorrent"><a href="#qBittorrent" class="headerlink" title="qBittorrent"></a>qBittorrent</h1><blockquote>
+<p>本文参考的文章有：<a target="_blank" rel="noopener" href="https://trackerslist.com/#/zh">https://trackerslist.com/#/zh</a><br><a target="_blank" rel="noopener" href="https://qu.js.cn/how-to-speed-github/#release%E4%B8%8B%E8%BD%BD%E5%8A%A0%E9%80%9F">https://qu.js.cn/how-to-speed-github/#release%E4%B8%8B%E8%BD%BD%E5%8A%A0%E9%80%9F</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/64254201">https://zhuanlan.zhihu.com/p/64254201</a>  </p>
+</blockquote>
+<h2 id="qBittorrent-是一款开源免费的种子和磁力链接下载工具，支持-Windows、Mac-和-Linux，且功能非常强大。"><a href="#qBittorrent-是一款开源免费的种子和磁力链接下载工具，支持-Windows、Mac-和-Linux，且功能非常强大。" class="headerlink" title="qBittorrent 是一款开源免费的种子和磁力链接下载工具，支持 Windows、Mac 和 Linux，且功能非常强大。"></a>qBittorrent 是一款开源免费的种子和磁力链接下载工具，支持 Windows、Mac 和 Linux，且功能非常强大。</h2><h2 id="qBittorrent的-下载链接"><a href="#qBittorrent的-下载链接" class="headerlink" title="qBittorrent的 下载链接"></a>qBittorrent的 <a target="_blank" rel="noopener" href="https://www.qbittorrent.org/download.php" title="官方网址">下载链接</a></h2><p>由于国内大部分用户并没有公网 IP，直接使用可能下载没速度，就需要安装好qBittorrent后再对设置配置一下<br><a target="_blank" rel="noopener" href="https://trackerslist.com/#/zh">https://trackerslist.com/#/zh</a> 这个网站专门整合Tracker（具体Tracker是什么意思自行百度），每8小时都有更新  </p>
+<h2 id="qBittorrent设置Tracker"><a href="#qBittorrent设置Tracker" class="headerlink" title="qBittorrent设置Tracker"></a>qBittorrent设置Tracker</h2><p>点击齿轮图标进入设置界面<br><img src="/assets/img/.jpg" srcset="/img/loading.gif" lazyload alt="qBittorrent主界面"><br>复制Tracker<br><img src="/assets/img/.jpg" srcset="/img/loading.gif" lazyload alt="Tracker"><br>将Tracker粘贴到下方输入框中<br><img src="/assets/img/.jpg" srcset="/img/loading.gif" lazyload alt="Tracker"><br>然后点击 [Apply] 保存。(如下图所示)<br><img src="/assets/img/.jpg" srcset="/img/loading.gif" lazyload alt="qBittorrent设置">  </p>
+<h1 id="国内加速Github的几种方案"><a href="#国内加速Github的几种方案" class="headerlink" title="国内加速Github的几种方案"></a>国内加速Github的几种方案</h1><p>国内最常用的镜像地址：</p>
+<ol>
+<li>github.com.cnpmjs.org</li>
+<li>hub.fastgit.org (推荐)</li>
+<li>gitclone.com<br>网站的内容与GitHub完整同步，可进行下载克隆等操作。  <h2 id="仓库克隆下载"><a href="#仓库克隆下载" class="headerlink" title="仓库克隆下载"></a>仓库克隆下载</h2>原地址<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">git clone https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/docker/</span>compose.git<br></code></pre></td></tr></table></figure></li>
+</ol>
+<p>改为</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">git clone https:<span class="hljs-regexp">//gi</span>thub.com.cnpmjs.org<span class="hljs-regexp">/docker/</span>compose.git<br></code></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">git clone https:<span class="hljs-regexp">//</span>hub.fastgit.org<span class="hljs-regexp">/docker/</span>compose.git<br></code></pre></td></tr></table></figure>
+<h2 id="Release下载加速"><a href="#Release下载加速" class="headerlink" title="Release下载加速"></a>Release下载加速</h2><p>原地址</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">wget https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/golang/g</span>o<span class="hljs-regexp">/archive/g</span>o1.<span class="hljs-number">15.7</span>.tar.gz<br></code></pre></td></tr></table></figure>
+
+<p>改为</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">wget https:<span class="hljs-regexp">//</span>hub.fastgit.org<span class="hljs-regexp">/golang/g</span>o<span class="hljs-regexp">/archive/g</span>o1.<span class="hljs-number">15.7</span>.tar.gz<br></code></pre></td></tr></table></figure>
+<h2 id="jsDelivr"><a href="#jsDelivr" class="headerlink" title="jsDelivr"></a>jsDelivr</h2><p>jsDelivr是一个开源的网站，是一款公共免费的CDN，提供稳定的CDN。</p>
+<blockquote>
+<p>CDN的全称是Content Delivery Network，即内容分发网络。CDN是构建在现有网络基础之上的智能虚拟网络，依靠部署在各地的边缘服务器,<br>通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。CDN的关键<br>技术主要有内容存储和分发技术。(摘自<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/CDN" title="CDN百度百科">百度百科</a>)<br>也就是说你上传资源（比如：图片，js之类的文件）到互联网上，CDN服务器帮你存储下来，当你要使用又可以调用它给你的CDN url。</p>
+</blockquote>
+<ol>
+<li>直接引用(临时)<br>格式为：</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/">https://cdn.jsdelivr.net/gh/</a>&lt;用户名&gt;/&lt;仓库名&gt;/&lt;文件及路径&gt;</p>
+<p>例如：GitHub</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/qimage/pub/blob/main/avatar.webp">https://github.com/qimage/pub/blob/main/avatar.webp</a></p>
+<p>转成 jsdelivr</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/qimage/pub/avatar.webp">https://cdn.jsdelivr.net/gh/qimage/pub/avatar.webp</a></p>
+<p>github.com 替换成 cdn.jsdelivr.net/gh</p>
+<p>/blob/main 删除</p>
+<ol start="2">
+<li>引入版本号(推荐)<br>版本号用@符链接，格式为：</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/">https://cdn.jsdelivr.net/gh/</a>&lt;用户名&gt;/&lt;仓库名&gt;@版本号/&lt;文件及路径&gt;</p>
+<p>例如：GitHub</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/qimage/pub/blob/main/avatar.webp">https://github.com/qimage/pub/blob/main/avatar.webp</a></p>
+<p>转成 jsdelivr</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/qimage/pub@main/avatar.webp">https://cdn.jsdelivr.net/gh/qimage/pub@main/avatar.webp</a></p>
+<p>github.com 替换成 cdn.jsdelivr.net/gh</p>
+<p>/blob/ 替换成 @</p>
+<p>注：main为创建的版本号</p>
+<p>建议使用发布版本号方案，只要单次版本号下的内容大小不超过50M即可，超过50M时使用多版本号。</p>
+<h2 id="更多详情请查看这篇文章"><a href="#更多详情请查看这篇文章" class="headerlink" title="更多详情请查看这篇文章"></a>更多详情请查看<a target="_blank" rel="noopener" href="https://qu.js.cn/how-to-speed-github/#release%E4%B8%8B%E8%BD%BD%E5%8A%A0%E9%80%9F">这篇文章</a></h2>
             </div>
             <hr>
             <div>
@@ -306,9 +353,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
-                    
                       <a class="hover-with-bg" href="/tags/%E5%88%86%E4%BA%AB/">分享</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
                     
                   </div>
                 
