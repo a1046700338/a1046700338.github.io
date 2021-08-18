@@ -4668,7 +4668,7 @@ blockquote footer cite:before {
   transform: rotate(360deg);
 }
 #vcomment textarea {
-  background: url("/img/friend_404.gif") 100% 100% no-repeat;
+  background: url("https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp") 100% 100% no-repeat;
 }
 #vcomment textarea:focus {
   background-image: none;
