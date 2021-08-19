@@ -1,4 +1,6 @@
 [![](https://data.jsdelivr.com/v1/package/gh/a1046700338/a1046700338.github.io/badge)](https://www.jsdelivr.com/package/gh/a1046700338/a1046700338.github.io)
+![GitHub top language](https://img.shields.io/github/languages/top/a1046700338/a1046700338.github.io?style=flat-square)
+
 
 POWER [HEXO](https://hexo.io/) | THEME [Butterfly]([Butterfly)
 
